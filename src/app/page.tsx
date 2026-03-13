@@ -167,6 +167,14 @@ export default function Home() {
   const { onMouseMove: onCardMouseMove } = useCardIlluminate()
   useScrollReveal()
 
+  // Force scroll to top on mount
+  useEffect(() => {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual'
+    }
+    window.scrollTo(0, 0)
+  }, [])
+
   // Loader
   useEffect(() => {
     const interval = setInterval(() => {
@@ -185,6 +193,7 @@ export default function Home() {
     const hideTimer = setTimeout(() => {
       setLoading(false)
       setMounted(true)
+      window.scrollTo(0, 0)
     }, 2800)
 
     return () => {

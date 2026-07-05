@@ -1,11 +1,17 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+})
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-jakarta',
+  weight: ['400', '500', '600'],
 })
 
 const clashDisplay = localFont({
@@ -62,7 +68,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className={`dark ${inter.variable} ${clashDisplay.variable}`}>
+    <html lang="es" className={`dark ${inter.variable} ${clashDisplay.variable} ${plusJakarta.variable}`}>
       <body className={inter.className}>{children}</body>
     </html>
   )

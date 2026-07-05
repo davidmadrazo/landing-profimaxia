@@ -60,15 +60,15 @@ export function ChatWidget() {
   }
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full" style={{ fontFamily: 'var(--font-jakarta), system-ui' }}>
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto p-3 space-y-2.5 scrollbar-hide">
+      <div className="flex-1 overflow-y-auto p-3.5 space-y-3 scrollbar-hide">
         {!hasMessages && (
           <div className="flex justify-start animate-fadeInUp">
-            <div className="flex gap-2 max-w-[85%]">
-              <Image src="/axia-avatar.png" alt="Axia" width={28} height={28} className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-1" />
-              <div className="glass-assistant-message rounded-2xl rounded-tl-sm px-3 py-2.5">
-                <p className="text-xs text-white/90">
+            <div className="flex gap-2.5 max-w-[85%]">
+              <Image src="/axia-avatar.png" alt="Axia" width={30} height={30} className="w-[30px] h-[30px] rounded-full object-cover flex-shrink-0 mt-0.5" />
+              <div className="glass-assistant-message rounded-2xl rounded-tl-sm px-3.5 py-2.5">
+                <p className="text-[13px] text-white/90 leading-relaxed">
                   Hola! Soy Axia, la asistente de ProfimaxIA. Cuentame que necesita tu negocio y te explico como la IA puede ayudarte.
                 </p>
               </div>
@@ -82,17 +82,17 @@ export function ChatWidget() {
             className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'} streaming-fade`}
           >
             {m.role === 'assistant' ? (
-              <div className="flex gap-2 max-w-[85%]">
-                <Image src="/axia-avatar.png" alt="Axia" width={28} height={28} className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-1" />
-                <div className="glass-assistant-message rounded-2xl rounded-tl-sm px-3 py-2.5">
-                  <p className="text-xs text-white/90 whitespace-pre-wrap">
+              <div className="flex gap-2.5 max-w-[85%]">
+                <Image src="/axia-avatar.png" alt="Axia" width={30} height={30} className="w-[30px] h-[30px] rounded-full object-cover flex-shrink-0 mt-0.5" />
+                <div className="glass-assistant-message rounded-2xl rounded-tl-sm px-3.5 py-2.5">
+                  <p className="text-[13px] text-white/90 leading-relaxed whitespace-pre-wrap">
                     {getMessageText(m)}
                   </p>
                 </div>
               </div>
             ) : (
-              <div className="glass-user-message rounded-2xl rounded-tr-sm px-3 py-2.5 max-w-[85%]">
-                <p className="text-xs whitespace-pre-wrap">{getMessageText(m)}</p>
+              <div className="glass-user-message rounded-2xl rounded-tr-sm px-3.5 py-2.5 max-w-[85%]">
+                <p className="text-[13px] leading-relaxed whitespace-pre-wrap">{getMessageText(m)}</p>
               </div>
             )}
           </div>
@@ -100,13 +100,13 @@ export function ChatWidget() {
 
         {isLoading && messages[messages.length - 1]?.role === 'user' && (
           <div className="flex justify-start streaming-fade">
-            <div className="flex gap-2">
-              <Image src="/axia-avatar.png" alt="Axia" width={28} height={28} className="w-7 h-7 rounded-full object-cover flex-shrink-0 mt-1" />
-              <div className="glass-assistant-message rounded-2xl rounded-tl-sm px-3 py-2.5">
-                <div className="flex gap-1">
-                  <span className="w-1.5 h-1.5 bg-purple-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-                  <span className="w-1.5 h-1.5 bg-pink-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-                  <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+            <div className="flex gap-2.5">
+              <Image src="/axia-avatar.png" alt="Axia" width={30} height={30} className="w-[30px] h-[30px] rounded-full object-cover flex-shrink-0 mt-0.5" />
+              <div className="glass-assistant-message rounded-2xl rounded-tl-sm px-3.5 py-3">
+                <div className="flex gap-1.5">
+                  <span className="w-1.5 h-1.5 bg-[#60A5FA] rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                  <span className="w-1.5 h-1.5 bg-[#93c5fd] rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                  <span className="w-1.5 h-1.5 bg-[#bfdbfe] rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@ export function ChatWidget() {
               <button
                 key={prompt}
                 onClick={() => handleQuickPrompt(prompt)}
-                className="px-2.5 py-1 text-[10px] rounded-full border border-[var(--glass-border)] bg-[var(--surface)] text-[var(--muted)] hover:text-white hover:border-[var(--primary)] transition-all duration-200"
+                className="px-3 py-1.5 text-[11px] rounded-full border border-[var(--glass-border)] bg-[var(--surface)] text-[var(--muted)] hover:text-white hover:border-[var(--primary)] transition-all duration-200"
               >
                 {prompt}
               </button>
@@ -129,7 +129,7 @@ export function ChatWidget() {
         )}
 
         {error && (
-          <div className="p-2 bg-red-500/10 border border-red-500/30 text-red-400 rounded-lg text-[10px]">
+          <div className="p-2.5 bg-red-500/10 border border-red-500/30 text-red-400 rounded-lg text-[11px]">
             Error: {error.message}
           </div>
         )}
@@ -138,7 +138,7 @@ export function ChatWidget() {
       </div>
 
       {/* Input */}
-      <form onSubmit={handleSubmit} className="p-2.5 border-t border-[var(--border)]">
+      <form onSubmit={handleSubmit} className="p-3 border-t border-[var(--border)]">
         <div className="flex gap-2 items-center">
           <input
             type="text"
@@ -146,14 +146,14 @@ export function ChatWidget() {
             onChange={(e) => setInput(e.target.value)}
             placeholder="Escribe tu mensaje..."
             disabled={isLoading}
-            className="flex-1 px-3 py-2 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-xs text-white placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--primary)] transition-colors"
+            className="flex-1 px-3.5 py-2.5 bg-[var(--surface)] border border-[var(--border)] rounded-xl text-[13px] text-white placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--primary)] transition-colors"
           />
           <button
             type="submit"
             disabled={isLoading || !input.trim()}
-            className="p-2 rounded-xl bg-gradient-to-r from-purple-600 to-pink-500 text-white disabled:opacity-40 hover:from-purple-500 hover:to-pink-400 transition-all duration-200"
+            className="p-2.5 rounded-xl bg-[#3B82F6] text-white disabled:opacity-30 hover:bg-[#60A5FA] transition-all duration-200"
           >
-            <Send className="w-3.5 h-3.5" />
+            <Send className="w-4 h-4" />
           </button>
         </div>
       </form>

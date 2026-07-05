@@ -21,7 +21,7 @@ El proyecto quedara como una aplicacion Next.js generica,
 lista para distribuir SIN las herramientas de desarrollo.
 
 Esta accion es IRREVERSIBLE.
-No podras usar /update-sf despues de esto.
+No podras usar /update-os despues de esto.
 
 Para confirmar, escribe exactamente: EJECT
 ```

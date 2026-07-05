@@ -2,7 +2,7 @@
 
 > **Estado**: APROBADO
 > **Fecha**: 2026-02-06
-> **Proyecto**: SaaS Factory Agencia (Landing Template)
+> **Proyecto**: ProfimaxIA OS Agencia (Landing Template)
 > **Referencia**: https://github.com/daniel-carreon/Curso-SF-AgenteDashboard
 
 ---

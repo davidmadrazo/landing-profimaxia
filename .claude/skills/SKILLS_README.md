@@ -1,4 +1,4 @@
-# 🎯 Skills System - SaaS Factory
+# 🎯 Skills System - ProfimaxIA OS
 
 **Skills** son carpetas con instrucciones que enseñan a Claude cómo hacer tareas especializadas. Son el corazón de la extensibilidad en Claude Code.
 
@@ -64,7 +64,7 @@ Instrucciones paso a paso.
 ## 🛠️ Tools Incluidos
 
 ### skill-creator
-Herramienta para crear nuevos skills en SaaS Factory.
+Herramienta para crear nuevos skills en ProfimaxIA OS.
 
 **Ubicación**: `.claude/skills/skill-creator/`
 
@@ -157,5 +157,5 @@ my-skill/
 
 ---
 
-*Sistema de Skills estandardizado para SaaS Factory*
+*Sistema de Skills estandardizado para ProfimaxIA OS*
 *Basado en Anthropic Agent Skills Spec v1.0*

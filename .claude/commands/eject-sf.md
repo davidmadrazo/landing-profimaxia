@@ -1,8 +1,8 @@
 ---
-description: "DESTRUCTIVO: Elimina toda la configuracion de SaaS Factory y deja solo el software funcional. Usar antes de distribuir el proyecto."
+description: "DESTRUCTIVO: Elimina toda la configuracion de ProfimaxIA OS y deja solo el software funcional. Usar antes de distribuir el proyecto."
 ---
 
-# Eject SaaS Factory
+# Eject ProfimaxIA OS
 
 ## ADVERTENCIA
 
@@ -15,7 +15,7 @@ Este comando eliminara PERMANENTEMENTE:
 - .claude/ (comandos, agentes, PRPs, templates, skills)
 - .mcp.json (configuracion de MCPs)
 - CLAUDE.md (system prompt)
-- Referencias a "SaaS Factory" en el codigo
+- Referencias a "ProfimaxIA OS" en el codigo
 
 El proyecto quedara como una aplicacion Next.js generica,
 lista para distribuir SIN las herramientas de desarrollo.
@@ -34,12 +34,12 @@ Para confirmar, escribe exactamente: EJECT
 
 ### Paso 1: Limpiar referencias en codigo
 
-Modifica estos archivos para quitar referencias a SaaS Factory:
+Modifica estos archivos para quitar referencias a ProfimaxIA OS:
 
 **`src/app/page.tsx`** - Cambiar el titulo:
 ```tsx
 // ANTES
-<h1>SaaS Factory</h1>
+<h1>ProfimaxIA OS</h1>
 
 // DESPUES
 <h1>Mi Aplicacion</h1>
@@ -49,8 +49,8 @@ Modifica estos archivos para quitar referencias a SaaS Factory:
 ```tsx
 // ANTES
 export const metadata: Metadata = {
-  title: 'SaaS Factory App',
-  description: 'Built with SaaS Factory',
+  title: 'ProfimaxIA OS App',
+  description: 'Built with ProfimaxIA OS',
 }
 
 // DESPUES
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
 **`package.json`** - Cambiar el nombre:
 ```json
 // ANTES
-"name": "saas-factory-app"
+"name": "profimaxia-os-app"
 
 // DESPUES
 "name": "mi-aplicacion"
@@ -133,7 +133,7 @@ vercel
 ### Paso 3: Eliminar archivos de configuracion
 
 ```bash
-# Eliminar archivos de SaaS Factory
+# Eliminar archivos de ProfimaxIA OS
 rm -f .mcp.json
 rm -f CLAUDE.md
 rm -rf src/features/.template/
@@ -167,7 +167,7 @@ Actualizado:
 - README.md (documentacion basica)
 
 Tu proyecto esta listo para distribuir.
-No queda rastro de SaaS Factory.
+No queda rastro de ProfimaxIA OS.
 ```
 
 ---
@@ -175,5 +175,5 @@ No queda rastro de SaaS Factory.
 ## Notas Importantes
 
 1. **Este comando se auto-destruye** - Despues de ejecutarlo, no existira mas
-2. **No hay vuelta atras** - Para recuperar SF, tendrias que volver a ejecutar el alias `saas-factory`
+2. **No hay vuelta atras** - Para recuperar SF, tendrias que volver a ejecutar el alias `profimaxia-os`
 3. **El codigo funcional NO se toca** - Solo se eliminan herramientas de desarrollo

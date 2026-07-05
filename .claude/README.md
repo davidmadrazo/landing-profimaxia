@@ -1,10 +1,10 @@
-# 🏭 SaaS Factory - Template Documentation
+# 🏭 ProfimaxIA OS - Template Documentation
 
 > **Esta es la fuente de verdad del template.** Guardada en `.claude/` para que no sea modificada durante el desarrollo de proyectos especificos.
 
 ---
 
-## 🎯 Que es SaaS Factory?
+## 🎯 Que es ProfimaxIA OS?
 
 Un template **production-ready** para crear aplicaciones SaaS modernas con desarrollo asistido por IA. Filosofia Henry Ford: un solo stack perfeccionado.
 
@@ -421,5 +421,5 @@ En tu dashboard de Vercel:
 
 ---
 
-*Este README es la fuente de verdad del template SaaS Factory.*
+*Este README es la fuente de verdad del template ProfimaxIA OS.*
 *Guardado en `.claude/` para preservarlo durante el desarrollo de proyectos.*

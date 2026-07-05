@@ -1,6 +1,6 @@
 # Design Systems
 
-Sistemas de diseño y patrones visuales listos para usar en proyectos SaaS Factory.
+Sistemas de diseño y patrones visuales listos para usar en proyectos ProfimaxIA OS.
 
 ## Estructura
 
@@ -38,4 +38,4 @@ Crea un dashboard usando el design system neumorphism
 
 ---
 
-*Parte del SaaS Factory V2 Design System.*
+*Parte del ProfimaxIA OS V2 Design System.*

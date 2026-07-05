@@ -1,12 +1,12 @@
 ---
 name: skill-creator
-description: Guide for creating custom skills in SaaS Factory. Use when you need to create a new skill to extend Claude's capabilities with specialized knowledge, workflows, or tools.
+description: Guide for creating custom skills in ProfimaxIA OS. Use when you need to create a new skill to extend Claude's capabilities with specialized knowledge, workflows, or tools.
 license: MIT
 ---
 
-# Skill Creator - SaaS Factory Edition
+# Skill Creator - ProfimaxIA OS Edition
 
-This skill provides guidance for creating custom skills following SaaS Factory standards.
+This skill provides guidance for creating custom skills following ProfimaxIA OS standards.
 
 ## Purpose
 
@@ -211,4 +211,4 @@ See `references/` for:
 
 ---
 
-**Create skills following SaaS Factory standards for consistency and quality.**
+**Create skills following ProfimaxIA OS standards for consistency and quality.**

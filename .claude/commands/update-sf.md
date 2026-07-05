@@ -1,34 +1,34 @@
 ---
-description: "Actualiza SaaS Factory a la ultima version. Busca el alias saas-factory, hace git pull y reemplaza la carpeta .claude/"
+description: "Actualiza ProfimaxIA OS a la ultima version. Busca el alias profimaxia-os, hace git pull y reemplaza la carpeta .claude/"
 ---
 
-# Update SaaS Factory
+# Update ProfimaxIA OS
 
 Este comando actualiza las herramientas de desarrollo (carpeta `.claude/`) a la ultima version disponible.
 
 ## Proceso
 
-### Paso 1: Buscar el alias saas-factory
+### Paso 1: Buscar el alias profimaxia-os
 
-Busca el alias `saas-factory` en los archivos de configuracion del shell del usuario:
+Busca el alias `profimaxia-os` en los archivos de configuracion del shell del usuario:
 
 ```bash
 # Buscar en zshrc
-grep "alias saas-factory" ~/.zshrc
+grep "alias profimaxia-os" ~/.zshrc
 
 # Si no esta, buscar en bashrc
-grep "alias saas-factory" ~/.bashrc
+grep "alias profimaxia-os" ~/.bashrc
 ```
 
 El alias tiene este formato:
 ```bash
-alias saas-factory="cp -r /ruta/al/repo/saas-factory/. ."
+alias profimaxia-os="cp -r /ruta/al/repo/saas-factory/. ."
 ```
 
 **Extrae la ruta del repo** del alias (la parte entre `cp -r ` y `/saas-factory/.`).
 
 Si no encuentras el alias, pregunta al usuario:
-> No encontre el alias `saas-factory`. Por favor, indica la ruta donde tienes el repositorio de SaaS Factory.
+> No encontre el alias `profimaxia-os`. Por favor, indica la ruta donde tienes el repositorio de ProfimaxIA OS.
 
 ### Paso 2: Actualizar el repositorio fuente
 
@@ -56,7 +56,7 @@ cp -r [RUTA_REPO_SF]/saas-factory/.claude/ .claude/
 Informa al usuario:
 
 ```
-SaaS Factory actualizado correctamente.
+ProfimaxIA OS actualizado correctamente.
 
 Cambios aplicados:
 - .claude/commands/    (comandos actualizados)

@@ -31,7 +31,7 @@ export function AdminNav({ user }: AdminNavProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
         <div className="flex items-center gap-4">
           <Link href="/admin" className="flex items-center gap-2">
-            <Image src="/logo.png" alt="SaaS Factory" width={28} height={28} className="rounded-md" />
+            <Image src="/logo.png" alt="ProfimaxIA OS" width={28} height={28} className="rounded-md" />
             <span className="text-sm font-semibold text-white">Admin</span>
           </Link>
 

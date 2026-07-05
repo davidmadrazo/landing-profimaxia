@@ -2,11 +2,11 @@
 description: "Inicializar contexto del proyecto para el asistente AI. Usa esto al comenzar una nueva conversación para que Claude entienda rápidamente tu proyecto."
 ---
 
-# Primer: Contexto SaaS Factory
+# Primer: Contexto ProfimaxIA OS
 
-Este proyecto fue creado con **SaaS Factory**, una template optimizada para desarrollo Agent-First. Al ejecutar `/primer`, el agente entiende inmediatamente qué tiene disponible y cómo trabajar.
+Este proyecto fue creado con **ProfimaxIA OS**, una template optimizada para desarrollo Agent-First. Al ejecutar `/primer`, el agente entiende inmediatamente qué tiene disponible y cómo trabajar.
 
-## Lo Que Ya Sabes (SaaS Factory DNA)
+## Lo Que Ya Sabes (ProfimaxIA OS DNA)
 
 ### Golden Path (Stack Fijo)
 No hay decisiones técnicas que tomar. El stack está definido:
@@ -98,7 +98,7 @@ Revisa `src/app/` y `src/features/` para entender:
 # 🏭 [Nombre del Proyecto]
 
 ## Template
-SaaS Factory v1.0 (Next.js 16 + Supabase)
+ProfimaxIA OS v1.0 (Next.js 16 + Supabase)
 
 ## Propósito
 [Qué problema resuelve en 1-2 líneas]
@@ -132,7 +132,7 @@ SaaS Factory v1.0 (Next.js 16 + Supabase)
 
 ---
 
-## Filosofía SaaS Factory
+## Filosofía ProfimaxIA OS
 
 ### El Humano Decide QUÉ, Tú Ejecutas CÓMO
 - El humano define el problema de negocio
@@ -164,4 +164,4 @@ SaaS Factory v1.0 (Next.js 16 + Supabase)
 
 ---
 
-*SaaS Factory: Agent-First Development*
+*ProfimaxIA OS: Agent-First Development*

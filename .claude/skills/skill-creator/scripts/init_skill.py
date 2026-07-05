@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Initialize a new skill with SaaS Factory standards.
+Initialize a new skill with ProfimaxIA OS standards.
 
 Usage:
     python init_skill.py my-skill --path ./output
@@ -121,7 +121,7 @@ dist/
 def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description="Initialize a new skill for SaaS Factory",
+        description="Initialize a new skill for ProfimaxIA OS",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:

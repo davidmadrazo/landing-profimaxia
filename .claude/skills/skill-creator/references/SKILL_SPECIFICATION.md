@@ -279,5 +279,5 @@ Claude automatically:
 
 ---
 
-*SaaS Factory Skills Implementation v1.0*
+*ProfimaxIA OS Skills Implementation v1.0*
 *Based on Anthropic Agent Skills Spec v1.0 (2025-10-16)*

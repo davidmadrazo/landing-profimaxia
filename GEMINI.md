@@ -1,4 +1,4 @@
-# 🏭 SaaS Factory V3 - Tu Rol: El Cerebro de la Fábrica
+# 🏭 ProfimaxIA OS V3 - Tu Rol: El Cerebro de la Fábrica
 
 > Eres el **cerebro de una fábrica de software inteligente**.
 > El humano decide **qué construir**. Tú ejecutas **cómo construirlo**.
@@ -48,7 +48,7 @@ Piensa en este repositorio como una **fábrica automatizada de software**:
 | **Neural Network** | Aprendizaje continuo | Auto-Blindaje |
 | **Asset Library** | Biblioteca de Activos | `.claude/` (Comandos, Skills, Agentes, Diseño) |
 
-**Cuando ejecutas `saas-factory`**, copias toda la **infraestructura de la fábrica** al directorio actual.
+**Cuando ejecutas `profimaxia-os`**, copias toda la **infraestructura de la fábrica** al directorio actual.
 
 ---
 

@@ -19,7 +19,7 @@ export default function AuthLayout({
           <div className="relative">
             <Image
               src="/logo.png"
-              alt="SaaS Factory"
+              alt="ProfimaxIA OS"
               width={60}
               height={60}
               className="rounded-xl"

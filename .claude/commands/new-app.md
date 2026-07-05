@@ -114,7 +114,7 @@ Una vez completada la entrevista, **genera el archivo `BUSINESS_LOGIC.md`** en l
 ```markdown
 # 📋 BUSINESS_LOGIC.md - [Nombre del Proyecto]
 
-> Generado por SaaS Factory | Fecha: [FECHA]
+> Generado por ProfimaxIA OS | Fecha: [FECHA]
 
 ## 1. Problema de Negocio
 **Dolor:** [Respuesta pregunta 1]

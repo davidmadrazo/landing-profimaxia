@@ -820,7 +820,8 @@ export default function Home() {
 
             {/* Divider */}
             <div className="border-t border-white/[0.06] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-              <span className="text-[11px] text-white/20">&copy; {new Date().getFullYear()} ProfimaxIA. Todos los derechos reservados.</span>
+              <span className="text-[11px] text-white/20 text-center sm:text-left">&copy; {new Date().getFullYear()} ProfimaxIA. Todos los derechos reservados.</span>
+              <span className="text-[11px] text-white/20 text-center sm:text-right">David Madrazo Martínez &middot; NIF 72353794A</span>
             </div>
           </div>
         </footer>

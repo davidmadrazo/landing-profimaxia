@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import {
   Smartphone, Cpu, Megaphone,
   X, Rocket, Code, Heart, ArrowDown, ArrowRight,
@@ -817,6 +818,21 @@ export default function Home() {
                 </a>
               </div>
             </div>
+
+            <Link href="/financiacion-europea" className="group block mb-10">
+              <div className="rounded-xl bg-white px-4 py-3 sm:px-6 sm:py-4 transition-opacity duration-300 group-hover:opacity-90">
+                <Image
+                  src="/fse/logos-fse.png"
+                  alt="Cofinanciado por la Unión Europea · Ministerio de Trabajo y Economía Social · Fondos Europeos · Gobierno de Cantabria · Servicio Cántabro de Empleo"
+                  width={1478}
+                  height={135}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="text-[11px] text-white/30 mt-3 text-center group-hover:text-white/60 transition-colors duration-300">
+                Proyecto cofinanciado por la Unión Europea (FSE+) · Programa Cantabria FSE+ 2021-2027 · Ver financiación europea
+              </p>
+            </Link>
 
             {/* Divider */}
             <div className="border-t border-white/[0.06] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
